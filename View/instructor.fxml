@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox prefHeight="618.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" style="-: grey;" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="124.0" preserveRatio="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label text="강사님 반갑습니다.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label text="회원번호: 100001" />
+            <Label text="나의 포인트: 1500점" />
+            <Button fx:id="btnCal" prefHeight="50.0" prefWidth="200.0" text="MY 수영일지">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnReg" prefHeight="50.0" prefWidth="200.0" text="수강신청">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnEdit" prefHeight="50.0" prefWidth="200.0" text="환결설정">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnpane3" prefHeight="50.0" prefWidth="200.0" text="Button">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnpane4" prefHeight="50.0" prefWidth="200.0" text="Button">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+            <VBox prefHeight="618.0" prefWidth="901.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="68.0" prefWidth="837.0" style="-fx-background-color: lightgrey;">
+                     <children>
+                        <Label text="  현재 이용중인 프로그램: 새벽수영 07:00-07:50 월수금-중급반-(성인)">
+                     <font>
+                        <Font size="12.0" />
+                     </font></Label>
+                        <VBox prefHeight="83.0" prefWidth="164.0" style="-fx-background-color: grey;">
+                     <HBox.margin>
+                        <Insets left="250.0" />
+                     </HBox.margin></VBox>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="553.0" prefWidth="837.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane fx:id="pane1" prefHeight="552.0" prefWidth="851.0" style="-fx-background-color: white;">
+                           <children>
+                        <HBox prefHeight="536.0" prefWidth="851.0">
+                           <children>
+                                    <VBox prefHeight="536.0" prefWidth="692.0">
+                                 <children>
+                                          <HBox prefHeight="38.0" prefWidth="692.0">
+                                             <children>
+                                                <Label text="운동 기록">
+                                             <HBox.margin>
+                                                <Insets left="20.0" top="10.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font name="Arial Rounded MT Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                             </children>
+                                          </HBox>
+                                          <GridPane alignment="CENTER" prefHeight="476.0" prefWidth="600.0" style="-fx-grid-lines-visible: true; -fx-background-color: white;" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label text="SUNDAY" textFill="RED" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                                                   <children>
+                                                      <Label text="MONDAY" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                                                   <children>
+                                                      <Label text="TUESDAY" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+                                                   <children>
+                                                      <Label text="WEDNESDAY" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
+                                                   <children>
+                                                      <Label text="THURSDAY" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
+                                                   <children>
+                                                      <Label text="FRIDAY" />
+                                                   </children>
+                                                </HBox>
+                                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6">
+                                                   <children>
+                                                      <Label text="SATURDAY" textFill="#000cff" />
+                                                   </children>
+                                                </HBox>
+                                                <VBox prefHeight="17.0" prefWidth="87.0" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb01" />
+                                                      <Button fx:id="btn011" prefHeight="17.0" prefWidth="87.0" VBox.vgrow="ALWAYS">
+                                                   <font>
+                                                      <Font size="12.0" />
+                                                   </font></Button>
+                                                      <Button fx:id="btn012" prefHeight="10.0" prefWidth="119.0">
+                                                   <font>
+                                                      <Font size="12.0" />
+                                                   </font></Button>
+                                                      <Button fx:id="btn013" prefHeight="10.0" prefWidth="119.0">
+                                                   <font>
+                                                      <Font size="12.0" />
+                                                   </font></Button>
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb11" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb21" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="105.0" prefWidth="89.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb31" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb41" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb51" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                                   <children>
+                                                      <Label fx:id="lb61" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb02" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb12" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb22" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb32" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb42" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb52" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                                   <children>
+                                                      <Label fx:id="lb62" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb03" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb13" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb23" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb33" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb43" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb53" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                                   <children>
+                                                      <Label fx:id="lb63" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb04" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb14" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb24" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb34" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb44" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb54" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                                   <children>
+                                                      <Label fx:id="lb64" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb05" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb15" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb25" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb35" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb45" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb55" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                                   <children>
+                                                      <Label fx:id="lb65" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="lb16" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="lb26" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="lb36" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="lb46" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="lb56" />
+                                                   </children>
+                                                </VBox>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                                   <children>
+                                                      <Label fx:id="lb66" />
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                             <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                             </columnConstraints>
+                                             <rowConstraints>
+                                                <RowConstraints maxHeight="86.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                          <RowConstraints minHeight="55.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                                             </rowConstraints>
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                          </GridPane>
+                                 </children>
+                              </VBox>
+                                    <VBox alignment="CENTER" prefHeight="519.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="나의 출결" />
+                                          <LineChart prefHeight="229.0" prefWidth="126.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                          </LineChart>
+                                          <Label text="우리반 출결">
+                                             <VBox.margin>
+                                                <Insets top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <BarChart prefHeight="223.0" prefWidth="200.0">
+                                            <xAxis>
+                                              <CategoryAxis side="BOTTOM" />
+                                            </xAxis>
+                                            <yAxis>
+                                              <NumberAxis side="LEFT" />
+                                            </yAxis>
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </BarChart>
+                                       </children>
+                                    </VBox>
+                           </children>
+                        </HBox>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="pane2" prefHeight="552.0" prefWidth="851.0" style="-fx-background-color: blue;" />
+                        <Pane fx:id="pane3" prefHeight="552.0" prefWidth="851.0" style="-fx-background-color: red;" />
+                        <Pane fx:id="pane4" prefHeight="552.0" prefWidth="851.0" style="-fx-background-color: yellow;" />
+                        <Pane fx:id="pane5" prefHeight="552.0" prefWidth="851.0" style="-fx-background-color: green;" />
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="404.0" prefWidth="702.0" style="-fx-background-color: #182745;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <Pane prefHeight="678.0" prefWidth="399.0">
+         <children>
+            <GridPane prefHeight="404.0" prefWidth="702.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="0.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="277.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="0.0" prefWidth="319.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="10.0" prefWidth="19.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="518.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="480.0" minHeight="10.0" prefHeight="252.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="480.0" minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="아이디찾기" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <GridPane prefHeight="382.0" prefWidth="300.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="50.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="101.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="169.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="회원번호:" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="생년월일:" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="전화번호:" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField id="fidTxtCustNo" prefHeight="0.0" prefWidth="234.0" style="-fx-focus-color: #52ffbd;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField id="fidTxtCustPhone" prefHeight="0.0" prefWidth="234.0" style="-FX-FOCUS-COLOR: #52ffbd;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                           <children>
+                              <Button id="fidBtnCheck" alignment="CENTER" prefHeight="37.0" prefWidth="275.0" style="-fx-background-color: #182745;" text="CHECK" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <DatePicker id="fIDBirth" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="382.0" prefWidth="300.0" style="-fx-background-color: WHITE; -fx-background-radius: 10;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label text="USERNAME:" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="생년월일:" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="전화번호:" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField id="fpwTxtUserName" prefHeight="0.0" prefWidth="234.0" style="-fx-focus-color: #52ffbd;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField id="fpwTxtPhone" prefHeight="0.0" prefWidth="234.0" style="-FX-FOCUS-COLOR: #52ffbd;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                           <children>
+                              <Button id="fpwBtnCheck" alignment="CENTER" prefHeight="37.0" prefWidth="275.0" style="-fx-background-color: #182745;" text="CHECK" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <DatePicker id="fPWBirth" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="67.0" minWidth="10.0" prefWidth="50.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="101.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="169.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+                     <children>
+                        <Label text="비밀번호 찾기" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <Pane prefHeight="618.0" prefWidth="1000.0" style="-fx-background-color: #182745;" visible="false">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="618.0" prefWidth="1000.0">
+                     <children>
+                        <Label text="SWIMMING CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="27.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

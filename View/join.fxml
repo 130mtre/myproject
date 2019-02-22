@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="618.0" prefWidth="1000.0" style="-fx-background-color: #182745;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.JoinController">
+   <center>
+      <VBox alignment="CENTER" prefHeight="50.0" prefWidth="50.0" styleClass="vStyle" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane alignment="CENTER_RIGHT" prefHeight="623.0" prefWidth="1000.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="730.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="518.0" minHeight="10.0" prefHeight="120.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="480.0" minHeight="10.0" prefHeight="600.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="166.0" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="133.0" text="SWIMMING CENTER" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <GridPane style="-fx-background-color: WHITE; -fx-background-radius: 10;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="65.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.0" minWidth="10.0" prefWidth="200.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="315.0" minWidth="10.0" prefWidth="200.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="65.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="USERNAME" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="PASSWORD" textFill="#182745" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="PASSWORD" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="이름" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="생년월일" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label text="전화번호" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label text="주소" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <TextField fx:id="jName" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <TextField fx:id="jAddr" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <DatePicker fx:id="jBirth" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label text="성별" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <children>
+                              <RadioButton fx:id="fFemale" text="여성" userData="여성">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="group" />
+                                 </toggleGroup></RadioButton>
+                              <RadioButton fx:id="fMale" text="남성" toggleGroup="$group" userData="남성">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin></RadioButton>
+                           </children>
+                        </HBox>
+                        <Label text="사진" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="회원번호" textFill="#182745" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="jcustomerNo" prefHeight="29.0" prefWidth="148.0" promptText="기존회원만 입력" />
+                              <Button fx:id="jCustomerCheck" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: #182745;" text="조회" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <children>
+                              <TextField fx:id="jPhone" prefHeight="29.0" prefWidth="199.0" promptText="숫자만 입력" />
+                           </children>
+                        </HBox>
+                        <Label text="상세주소" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <TextField fx:id="jAddr2" promptText="상세주소" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <PasswordField fx:id="jTxtPw" promptText="비밀번호" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <PasswordField fx:id="jTxtPwConfirm" promptText="비밀번호 확인" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Pane prefHeight="5.0" prefWidth="198.0" style="-fx-border-color: #182745;" GridPane.columnIndex="5" GridPane.rowIndex="5" GridPane.rowSpan="3">
+                           <children>
+                              <ImageView fx:id="jImageView" fitHeight="142.0" fitWidth="202.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </Pane>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <children>
+                              <Button fx:id="jBtnImage" prefHeight="30.0" prefWidth="203.0" style="-fx-background-color: #182745;" text="사진등록" textFill="WHITE">
+                                 <graphic>
+                                    <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: white;">
+                                       <image>
+                                          <Image url="@../images/icons8-plus-30%20(1).png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <TextField fx:id="jTxtId" prefHeight="29.0" prefWidth="146.0" promptText="아이디" />
+                              <Button fx:id="jBtnIdCheck" prefHeight="29.0" prefWidth="50.0" style="-fx-background-color: #182745;" text="체크" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </GridPane>
+                  <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1" />
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="jBtnJoin" prefHeight="0.0" prefWidth="50.0" style="-fx-background-color: #52ffbd; -fx-background-radius: 10;" text="가입">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="jBtnCancel" prefHeight="0.0" prefWidth="50.0" style="-fx-background-color: white; -fx-background-radius: 10;" text="취소">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

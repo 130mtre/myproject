@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox prefHeight="618.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdmController">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="618.0" prefWidth="304.0" style="-fx-background-color: #182745;" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="202.0">
+               <children>
+                  <Circle radius="23.0" strokeType="INSIDE">
+                     <HBox.margin>
+                        <Insets left="20.0" right="15.0" />
+                     </HBox.margin>
+                     <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#006dff" />
+                              <Stop color="#52ffbd" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </fill>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#52ffbd" />
+                              <Stop color="#182745" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Circle>
+                  <Label text="관리자님" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="202.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#52ffbd" height="55.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="5.0" HBox.hgrow="ALWAYS" />
+                  <Button fx:id="btnHome" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" prefHeight="55.0" prefWidth="197.0" style="-fx-background-color: #182745;" text="Home" textFill="WHITE" HBox.hgrow="ALWAYS" />
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="202.0">
+               <children>
+                  <Rectangle fx:id="recProgram" arcHeight="5.0" arcWidth="5.0" fill="#52ffbd" height="55.0" stroke="BLACK" strokeType="INSIDE" width="5.0" />
+                  <Button fx:id="btnProgram" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" prefHeight="55.0" prefWidth="197.0" style="-fx-background-color: #182745;" text="프로그램 관리" textFill="WHITE" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="202.0">
+               <children>
+                  <Rectangle fx:id="recCustomer" arcHeight="5.0" arcWidth="5.0" fill="#52ffbd" height="55.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="5.0" />
+                  <Button fx:id="btnCustomer" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" prefHeight="55.0" prefWidth="197.0" style="-fx-background-color: #182745;" text="회원정보 관리" textFill="WHITE" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="202.0">
+               <children>
+                  <Rectangle fx:id="recAtt" arcHeight="5.0" arcWidth="5.0" fill="#52ffbd" height="55.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="5.0" />
+                  <Button fx:id="btnAtt" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" prefHeight="55.0" prefWidth="197.0" style="-fx-background-color: #182745;" text="회원 출석정보 관리" textFill="WHITE" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="202.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#52ffbd" height="55.0" stroke="BLACK" strokeType="INSIDE" visible="false" width="5.0" />
+                  <Button fx:id="btnSales" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" prefHeight="55.0" prefWidth="197.0" style="-fx-background-color: #182745;" text="매출관리" textFill="WHITE" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Button fx:id="btnTimeCheck" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="20.0" prefHeight="9.0" prefWidth="162.0" style="-fx-background-color: #52ffbd; -fx-background-radius: 50;" text="출석체크" textFill="#182745" HBox.hgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="140.0" />
+               </VBox.margin>
+            </Button>
+            <HBox prefHeight="60.0" prefWidth="202.0">
+               <children>
+                  <Button fx:id="aBtnLogout" alignment="BASELINE_LEFT" graphicTextGap="20.0" prefHeight="55.0" prefWidth="211.0" style="-fx-background-color: #182745;" text="Logout" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/icons8-exit-30.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children></VBox>
+            <VBox prefHeight="618.0" prefWidth="901.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="68.0" prefWidth="837.0" style="-fx-background-color: #182745; -fx-border-color: #0c1a36;" />
+                  <Pane prefHeight="553.0" prefWidth="837.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <Pane fx:id="aPaneProgram" prefHeight="552.0" prefWidth="799.0" style="-fx-background-color: #182745;">
+                     <children>
+                        <TableView fx:id="aTblProgram" layoutX="21.0" layoutY="116.0" prefHeight="415.0" prefWidth="756.0">
+                          <columns>
+                            <TableColumn prefWidth="90.0" text="구분" />
+                            <TableColumn prefWidth="134.0" text="프로그램 이름" />
+                              <TableColumn minWidth="0.0" prefWidth="64.0" text="반" />
+                              <TableColumn prefWidth="104.0" text="코드" />
+                              <TableColumn prefWidth="96.0" text="강사번호" />
+                              <TableColumn prefWidth="60.0" text="인원" />
+                              <TableColumn prefWidth="83.0" text="대상" />
+                              <TableColumn prefWidth="108.0" text="수강료" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="aTxtGroup" layoutX="450.0" layoutY="24.0" prefHeight="29.0" prefWidth="79.0" promptText="반" />
+                        <TextField fx:id="aTxtCode" layoutX="539.0" layoutY="24.0" prefHeight="29.0" prefWidth="91.0" promptText="코드" />
+                        <TextField fx:id="aTxtTO" layoutX="270.0" layoutY="65.0" prefHeight="29.0" prefWidth="95.0" promptText="인원" />
+                        <TextField fx:id="aTxtTuition" layoutX="506.0" layoutY="65.0" prefHeight="29.0" prefWidth="124.0" promptText="수강료" />
+                        <Button fx:id="aBtnRegist" layoutX="639.0" layoutY="23.0" prefHeight="70.0" prefWidth="80.0" style="-fx-background-color: #52ffbd;" text="등록" />
+                        <Label layoutX="21.0" layoutY="29.0" text="프로그램 등록" textFill="#52ffbd" />
+                        <ComboBox fx:id="aCmbSelect" layoutX="145.0" layoutY="24.0" prefHeight="29.0" prefWidth="116.0" promptText="구분" />
+                        <ComboBox fx:id="aCmbClassName" layoutX="270.0" layoutY="24.0" prefHeight="29.0" prefWidth="171.0" promptText="프로그램 이름" />
+                        <ComboBox fx:id="aCmbTarget" layoutX="374.0" layoutY="65.0" prefHeight="29.0" prefWidth="124.0" promptText="대상" />
+                        <TextField fx:id="aTxtInstructor" layoutX="145.0" layoutY="65.0" prefHeight="29.0" prefWidth="116.0" promptText="강사번호" />
+                        <Button fx:id="aBtnRemove" layoutX="726.0" layoutY="23.0" prefHeight="70.0" prefWidth="50.0" style="-fx-background-color: white;" text="삭제" />
+                     </children>
+                     <effect>
+                        <InnerShadow color="#0c1a36" />
+                     </effect></Pane>
+                  <Pane fx:id="aPaneCust" prefHeight="552.0" prefWidth="799.0" style="-fx-background-color: #182745;">
+                     <children>
+                        <TableView fx:id="tblCustView" layoutX="21.0" layoutY="80.0" prefHeight="458.0" prefWidth="756.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="회원번호" />
+                              <TableColumn prefWidth="73.0" text="아이디" />
+                              <TableColumn minWidth="0.0" prefWidth="77.0" text="비밀번호" />
+                              <TableColumn prefWidth="58.0" text="이름" />
+                              <TableColumn prefWidth="57.0" text="성별" />
+                              <TableColumn prefWidth="94.0" text="생년월일" />
+                              <TableColumn prefWidth="41.0" text="구분" />
+                              <TableColumn prefWidth="60.0" text="주소" />
+                              <TableColumn prefWidth="55.0" text="전화번호" />
+                              <TableColumn prefWidth="55.0" text="사진" />
+                              <TableColumn prefWidth="110.0" text="등록일" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="aBtnNewCust" layoutX="399.0" layoutY="24.0" prefHeight="22.0" prefWidth="266.0" style="-fx-background-color: #52ffbd;" text="신규회원 등록" textFill="#182745" />
+                        <Label layoutX="21.0" layoutY="29.0" text="회원 관리/ 등록" textFill="#52ffbd" />
+                        <Button fx:id="aBtnCustRemove" layoutX="675.0" layoutY="24.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="103.0" style="-fx-background-color: white;" text="삭제" />
+                     </children>
+                     <effect>
+                        <InnerShadow color="#0c1a36" />
+                     </effect>
+                  </Pane>
+                  <Pane fx:id="aPaneSales" prefHeight="552.0" prefWidth="799.0" style="-fx-background-color: #182745;">
+                     <children>
+                        <TableView layoutX="21.0" layoutY="73.0" prefHeight="458.0" prefWidth="474.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="등록날짜" />
+                              <TableColumn prefWidth="76.0" text="회원번호" />
+                              <TableColumn prefWidth="58.0" text="구분" />
+                              <TableColumn prefWidth="118.0" text="프로그램이름" />
+                              <TableColumn minWidth="1.0" prefWidth="46.0" text="반" />
+                              <TableColumn prefWidth="84.0" text="결제금액" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="21.0" layoutY="29.0" text="매출관리" textFill="#52ffbd" />
+                        <LineChart layoutX="511.0" layoutY="73.0" prefHeight="212.0" prefWidth="266.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <Label layoutX="511.0" layoutY="29.0" text="이번달 매출차트" textFill="#52ffbd" />
+                        <Label layoutX="511.0" layoutY="289.0" text="6개월 매출차트" textFill="#52ffbd" />
+                     </children>
+                     <effect>
+                        <InnerShadow color="#0c1a36" />
+                     </effect>
+                  </Pane>
+                  <Pane fx:id="aPaneAtt" prefHeight="552.0" prefWidth="799.0" style="-fx-background-color: #182745;">
+                     <children>
+                        <TableView fx:id="tblAttView" layoutX="21.0" layoutY="73.0" prefHeight="458.0" prefWidth="756.0">
+                           <columns>
+                              <TableColumn text="회원번호" />
+                              <TableColumn prefWidth="70.0" text="코드" />
+                              <TableColumn text="이름" />
+                              <TableColumn prefWidth="65.0" text="성별" />
+                              <TableColumn minWidth="1.0" prefWidth="66.0" text="구분" />
+                              <TableColumn prefWidth="104.0" text="연락처" />
+                              <TableColumn prefWidth="94.0" text="사진" />
+                              <TableColumn minWidth="0.0" prefWidth="196.0" text="출석일" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="21.0" layoutY="29.0" text="출석정보 관리" textFill="#52ffbd" />
+                     </children>
+                     <effect>
+                        <InnerShadow color="#0c1a36" />
+                     </effect>
+                  </Pane>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
